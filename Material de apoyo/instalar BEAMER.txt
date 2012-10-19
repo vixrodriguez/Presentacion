@@ -1,0 +1,5 @@
+Instalen los directorios (después de descomprimir, obviamente) 
+en el directorio \tex\latex dentro del directorio de MiKTeX. 
+Es necesario actualizar la base de datos de latex para 
+poder utilizar los paquetes, para lo cual se acciona 
+Refresh FNDB en las opciones de MiKTeX.
