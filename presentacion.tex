@@ -1,47 +1,79 @@
 % FORMATO DEL DOCUMENTO BEAMER A PRESENTAR
-\documentclass{beamer}					% Utilizacion del paquete beamer
-\usepackage[spanish]{babel} 				% Para separar correctamente las palabras
-\usepackage [utf8]{inputenc} 				% Cargamos el modulo de codificacion de caracteres para que acepte tildes y eñes
-\usecolortheme[RGB={0,200,0}]{structure} 		% Color del tema
+\documentclass{beamer}						% Utilizacion del paquete beamer
+\usepackage[spanish]{babel} 					% Para separar correctamente las palabras
+\usepackage [utf8]{inputenc} 					% Cargamos el modulo de codificacion de caracteres para que acepte tildes y eñes
+\usepackage{graphicx}						%Paquete para insertar graficas
+
+\usecolortheme[RGB={40,50,150}]{structure} 		% Color del tema
 \setbeamertemplate{items}[ball]
 \setbeamertemplate{blocks}[rounded][shadow=true]
-%\usetheme{Warsaw}
-\usetheme{Antibes}
+
+\mode<presentation> {
+  \usetheme{Warsaw}
+  \setbeamercovered{transparent}
+}
+
+\institute{
+
+	\inst{}%
+	\large {\textbf{Escuela Superior Politecnica del Litoral (ESPOL)}}\\
+	\small
+	Facultad de Ingenieria en Electricidad y Computacion (FIEC)\\
+	Lenguajes de programacion
+	\and
+	\inst{}%
+
+		\large {\textbf{Integrantes}}
+		\small
+		\begin{center}
+			\begin{itemize}
+				\centering \item Víctor Rodríguez \\
+				%\item Carlos Ramírez\\
+				%\item Marlon Loayza\\
+			\end{itemize}
+		\end{center}
+}
+%\usetheme{Antibes}
 \begin{document}
-	
+
 	%Diapositiva de presentacion
 	\begin{frame}
+		\frametitle{}
 		\title[Swarm Intelligente]{NOMBRE DEL PROYECTO}	
 		\titlepage
+
 		\scriptsize
-		\begin{center}
-  			%\begin{itemize}
-				Víctor Rodríguez\\
-				Carlos Ramírez\\
-				Marlon Loayza\\
-			%\end{itemize}
-		\end{center}
 		\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
 		\setbeamercolor{title}{fg=red!80!black,bg=blue!20!white}
 	\end{frame}	
 
-	%D
+	%Diapositiva de indice
 	\begin{frame}
-		%\frametitle{Presentación de muestra}
-		%\title[Swarm Intelligente]{Inteligencia basada en redes sociales}
-		Una Formula:
-		\[
-		\int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
-		\]
-		Una lista "itemizada":
-		\begin{itemize}
-			\item itemized item 1
-			\item itemized item 2
-			\item itemized item 3
-		\end{itemize}		
-		\begin{theorem}
-			En un triangulo correcto, el cuadrado de la hipotenusa
-			iguala la suma de los cuadrados de los otros lados.
-		\end{theorem}
+		\frametitle{Puntos a tocar}
+		\tableofcontents[pausesections]
+		
+		%\section{Bibliografia}
+		
+	\end{frame}
+
+	%Diapositiva de los objetivos
+
+	\begin{frame}	
+		\section{OBJETIVOS}
+		\frametitle{OBJETIVOS}
+	\end{frame}
+
+	%Diapositiva acerca del proyecto
+
+	\begin{frame}
+		\section{PROPUESTA}
+		\frametitle{PROPUESTA}
+	\end{frame}
+
+	%Diapositiva de bibliografia
+		
+	\begin{frame}
+		\section{BIBLIOGRAFIA}
+		\frametitle{BIBLIOGRAFIA}
 	\end{frame}
 \end{document}
