@@ -1,11 +1,34 @@
 % FORMATO DEL DOCUMENTO BEAMER A PRESENTAR
 \documentclass{beamer}					% Utilizacion del paquete beamer
+\usepackage[spanish]{babel} 				% Para separar correctamente las palabras
 \usepackage [utf8]{inputenc} 				% Cargamos el modulo de codificacion de caracteres para que acepte tildes y eñes
 \usecolortheme[RGB={0,200,0}]{structure} 		% Color del tema
-\usetheme{Warsaw}
+\setbeamertemplate{items}[ball]
+\setbeamertemplate{blocks}[rounded][shadow=true]
+%\usetheme{Warsaw}
+\usetheme{Antibes}
 \begin{document}
+	
+	%Diapositiva de presentacion
 	\begin{frame}
-		\frametitle{Presentación de muestra}
+		\title[Swarm Intelligente]{NOMBRE DEL PROYECTO}	
+		\titlepage
+		\scriptsize
+		\begin{center}
+  			%\begin{itemize}
+				Víctor Rodríguez\\
+				Carlos Ramírez\\
+				Marlon Loayza\\
+			%\end{itemize}
+		\end{center}
+		\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+		\setbeamercolor{title}{fg=red!80!black,bg=blue!20!white}
+	\end{frame}	
+
+	%D
+	\begin{frame}
+		%\frametitle{Presentación de muestra}
+		%\title[Swarm Intelligente]{Inteligencia basada en redes sociales}
 		Una Formula:
 		\[
 		\int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
