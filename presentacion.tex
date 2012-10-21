@@ -14,66 +14,66 @@
 }
 
 \institute{
-
-	\inst{}%
-	\large {\textbf{Escuela Superior Politecnica del Litoral (ESPOL)}}\\
-	\small
-	Facultad de Ingenieria en Electricidad y Computacion (FIEC)\\
-	Lenguajes de programacion
-	\and
-	\inst{}%
-
-		\large {\textbf{Integrantes}}
+		\inst{}%
+		\large {\textbf{Escuela Superior Politecnica del Litoral (ESPOL)}}\\
 		\small
-		\begin{center}
+		Facultad de Ingenieria en Electricidad y Computacion (FIEC)\\
+		Lenguajes de programacion
+		\and
+		\inst{}%
+		\large {\textbf{Integrantes}}\\
+		\small
+		\parbox{6cm}{% Se crea una caja de texto para los integrantes
 			\begin{itemize}
-				\centering \item Víctor Rodríguez \\
-				%\item Carlos Ramírez\\
-				%\item Marlon Loayza\\
-			\end{itemize}
-		\end{center}
+				 \item Victor Rodriguez
+				 \item Marlon Loayza
+			\end{itemize}}
+		\parbox{1cm}{\flushright \includegraphics[scale=0.15]{./images/logo.jpg}}%Se crea una caja de texto para la imagen
+		
 }
+%\titlegraphic[abrev.]{figura}
 %\usetheme{Antibes}
 \begin{document}
 
 	%Diapositiva de presentacion
 	\begin{frame}
-		\frametitle{}
-		\title[Swarm Intelligente]{NOMBRE DEL PROYECTO}	
+		\title[Swarm Intelligente]{NOMBRE DEL PROYECTO}
+		\date{}								%Elimina la fecha de la presentacion
 		\titlepage
-
 		\scriptsize
 		\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
 		\setbeamercolor{title}{fg=red!80!black,bg=blue!20!white}
+		%\includegraphics[width=3cm]{./images/logo.jpg}
 	\end{frame}	
 
 	%Diapositiva de indice
 	\begin{frame}
 		\frametitle{Puntos a tocar}
 		\tableofcontents[pausesections]
-		
-		%\section{Bibliografia}
-		
 	\end{frame}
 
 	%Diapositiva de los objetivos
-
 	\begin{frame}	
 		\section{OBJETIVOS}
 		\frametitle{OBJETIVOS}
+		
+		\begin{itemize}
+			\item Objetivo 1\\
+			\item Objetivo 2\\
+			\item Objetivo 3\\
+		\end{itemize}
 	\end{frame}
 
 	%Diapositiva acerca del proyecto
-
 	\begin{frame}
 		\section{PROPUESTA}
 		\frametitle{PROPUESTA}
 	\end{frame}
 
 	%Diapositiva de bibliografia
-		
 	\begin{frame}
 		\section{BIBLIOGRAFIA}
 		\frametitle{BIBLIOGRAFIA}
 	\end{frame}
+	
 \end{document}
